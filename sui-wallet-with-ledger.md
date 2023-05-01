@@ -1,6 +1,5 @@
----
-title: Use Sui Wallet with a Ledger Wallet
----
+
+# Use Sui Wallet with a Ledger Wallet
 
 This guide describes how to use Sui Wallet with your Ledger device. When you connect your Ledger device, you can add up to 10 accounts from your device to Sui Wallet. You can then use the account in Sui Wallet just like any other account, but with the added protection of storing your private keys in a cold storage wallet. This gives you complete control of the private keys for your digital assets. To use your device with Sui Wallet, you just need to install the Sui app on the device, add one or more accounts from the device to Sui Wallet, and then authorize the connection to Sui Wallet when you use the account to perform transactions on the Sui network.
 
