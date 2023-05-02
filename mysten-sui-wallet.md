@@ -15,7 +15,7 @@ Sui Wallet makes it easy for you to:
 - Auto split/merge coins to the exact transfer amount
 - View transaction history and details in Sui Explorer
 
-To test more advanced features not available in Sui Wallet, see [Sui Client CLI](../build/cli-client.md).
+To test more advanced features not available in Sui Wallet, see [Sui Client CLI](https://docs.sui.io/build/cli-client).
 
 ## Install Sui Wallet
 
@@ -221,7 +221,7 @@ Your wallet immediately disconnects from the app and displays the **Apps** tab.
 
 You can use Sui Wallet with other Sui networks to test new or updated apps on Sui. In addition to **Sui Mainnet**, Sui Wallet supports connecting to **Sui Testnet**, **Sui Devnet**, a **Local** network, or a **Custom RPC URL** on a network you create.
 
-To learn how to create a local network, see [Create a Local Sui Network](../build/sui-local-network.md).
+To learn how to create a local network, see [Create a Local Sui Network](https://docs.sui.io/build/sui-local-network).
 
 **Change the active network connection**
 1. Click the menu (the three bars) at the top-right corner of the Sui Wallet interface.

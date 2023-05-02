@@ -1,33 +1,35 @@
 # Sui Explorer by Mysten Labs
 
-[Sui Explorer](https://explorer.sui.io/) lets you view data about transactions and activity on the Sui network. In addition to viewing activity on the network, you can use the Explorer to:
+[Sui Explorer](https://suiexplorer.com/) lets you view data about transactions and activity on the Sui network. Use Sui Explorer to:
  * View up-to-date information about the activity and metrics on the Sui network.
  * Look up, verify, and track your assets and contracts.
  * Utilize fast, reliable, and transparent debugging and auditing data to help identify and resolve issues.
  * Get go-to-definition support for all smart contracts, referred to as packages in Sui.
  * View validators and geographic locations of currently active Full nodes.
+ * View details about current Sui Validators performance and staking rewards.
 
  See the [Sui Explorer README](https://github.com/MystenLabs/sui/tree/main/apps/explorer#readme) for instructions on how to run the Explorer locally.
 
 ## Choose a network
 
-When you open Sui Explorer, it displays the transactions for the Mainnet network by default. You can also use the Explorer to view data for Sui Devnet, Sui Testnet, a local network running in your environment or a custom RPC endpoint URL. Use the drop-down menu at the top-right of the page to choose a different network.
+When you open Sui Explorer, it displays the transactions for the Mainnet network by default. You can also use the Explorer to view data for Sui Devnet, Sui Testnet, a local network running in your environment, or a custom RPC endpoint URL. Use the drop-down menu at the top-right of the page to choose a different network.
 
 ## Finding your transaction
 
-You can search for the transactions using an address, object ID, or transaction ID. For example, you can search for your wallet address to confirm a transaction or view additional details about a transaction you’ve approved. See [Sui Wallet](../explore/wallet-browser.md) to learn how to create a wallet.
+You can search for the transactions using an address, object ID, or transaction ID. For example, you can search for your wallet address to confirm a transaction or view additional details about a transaction you’ve approved. See [Sui Wallet](https://github.com/MystenLabs/mysten-app-docs/blob/main/mysten-sui-wallet.md) to learn how to create a wallet.
 
-**To search for a transaction made using the Sui Wallet**
+**To search for a transaction made using Sui Wallet**
 1. Open your Sui Wallet.
 1. Click the clipboard icon to copy your wallet address.
 1. Open the Sui Explorer.
 1. In the search field, paste your wallet address and then press **Enter**.
+1. Click the address displayed under the search field.
 
-The Explorer displays the **Address** details page for your wallet address. You should see the same transaction in Explorer that you see in your wallet history. Click on a transaction to view the details for it.
+The Explorer displays the **Address** details page for your wallet address, including owned objects and transaction history. You should see the same transactions in Explorer that you see in your wallet history. Click on a transaction to view the details for it.
 
 ## Explorer start page
 
-When you open Sui Explorer, the page displays network stats, transactions, and top validators on the network. The **Transactions** table lists the most recent transaction first.
+When you open Sui Explorer, the page displays network stats, transactions, and a partial list of validators on the network, sorted randomly. The **Transactions** table lists the most recent transaction first.
 
 The **Top Validators** table lists the top validators on the network and includes a map showing the geographic locations of all nodes on the network.
 
