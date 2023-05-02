@@ -1,6 +1,4 @@
----
-title: Sui Explorer
----
+# Sui Explorer by Mysten Labs
 
 [Sui Explorer](https://explorer.sui.io/) lets you view data about transactions and activity on the Sui network. In addition to viewing activity on the network, you can use the Explorer to:
  * View up-to-date information about the activity and metrics on the Sui network.
