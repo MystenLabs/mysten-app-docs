@@ -5,16 +5,43 @@
  * Look up, verify, and track your assets and contracts.
  * Utilize fast, reliable, and transparent debugging and auditing data to help identify and resolve issues.
  * Get go-to-definition support for all smart contracts, referred to as packages in Sui.
- * View validators and geographic locations of currently active Full nodes.
- * View details about current Sui Validators performance and staking rewards.
+ * View the geographic locations of currently active Full nodes.
+ * View details about current validators, including performance and staking rewards.
 
  See the [Sui Explorer README](https://github.com/MystenLabs/sui/tree/main/apps/explorer#readme) for instructions on how to run the Explorer locally.
+
+ ## Sui Explorer main page
+
+The main page displays information about network statistics, current gas price, epochs and checkpoints, transaction activity, popular packages, current gas price, and a partial list of validators on the network, sorted randomly.
+
+The **Network TPS** block shows the current transactions per second (TPS) and peak TPS on the network over the previous 30 days.
+
+The **Current Epoch** block shows the current epoch number, time remaining until the epoch ends, and the time and day when the epoch started. Click the box to view details about the epoch, such as the checkpoints, participating validators, rewards, and storage fund balance.
+
+The **Reference Gas Price** block shows the current gas fee for transactions, and the average gas fee over the previous 7 epochs or 30 epochs based on the setting you choose. You can display the value in MIST or SUI.
+
+The **On the Network** box shows total number of packages, transaction blocks, and objects on the network. This is a cumulative running total since network genesis.
+
+The **Sui Nodes** map shows the geographic location of nodes on the three Sui networks, Mainnet, Testnet, and Devnet. Larger blue dots indicate a larger larger number of nodes in the region. Hover your cursor over a country to see the number of nodes in that country.
+
+The **Transactions** table includes the following tabs:
+* **Transaction Blocks** - shows the transactions on the network, with the most recent transaction first. Click on a value in the **Digest** or **Sender** columns to view details about them. Click **More Transaction Blocks** below the table to view all transactions on the network. You can choose the number of results per page using the drop-down in the bottom-right corner.
+* **Epochs** - Shows a list of completed epochs and details about them, such as transaction blocks and stake rewards. Click on an epoch number to view more details about it, or click on a checkpoint number for details about it. Click **More Epochs** below the table to view all epochs.
+* **Checkpoints** - Lists the checkpoints for the current epoch and details about them. Click a value in the **Digest** column to view details about it. 
+
+The **Validators** table lists some of the validators on the network in random order. Click on a validator to view more details about that validator. Click **More Validators** at the below the table to view all current validators on the network.
+
+The **Popular Packages** section shows the most frequently accessed packages on the network. You can choose to show data for the previous 3 days (3D), 7 days (7D), or 30 days (30D). Click a value in the **Modules** column to view details about the module, and click a value in the **Packages** column to view the associated package.
 
 ## Choose a network
 
 When you open Sui Explorer, it displays the transactions for the Mainnet network by default. You can also use the Explorer to view data for Sui Devnet, Sui Testnet, a local network running in your environment, or a custom RPC endpoint URL. Use the drop-down menu at the top-right of the page to choose a different network.
 
-## Finding your transaction
+## Initiate staking from Sui Explorer
+
+You can initiate a stake request for a validator directly from the detail page for in Sui Explorer. Each validator detail page displays data to help you choose a validator that matches your objectives for staking. If you identify a validator you want to stake with, just click **Stake SUI** near the validator name in the top-left of the page. When you click the link, you wallet opens to the staking flow for the selected validator. To learn more about staking with Sui Wallet, see [Stake and Earn SUI](mysten-sui-wallet.md#stake-and-earn-sui).
+
+## Find your transaction
 
 You can search for the transactions using an address, object ID, or transaction ID. For example, you can search for your wallet address to confirm a transaction or view additional details about a transaction you’ve approved. See [Sui Wallet](https://github.com/MystenLabs/mysten-app-docs/blob/main/mysten-sui-wallet.md) to learn how to create a wallet.
 
@@ -26,110 +53,3 @@ You can search for the transactions using an address, object ID, or transaction 
 1. Click the address displayed under the search field.
 
 The Explorer displays the **Address** details page for your wallet address, including owned objects and transaction history. You should see the same transactions in Explorer that you see in your wallet history. Click on a transaction to view the details for it.
-
-## Explorer start page
-
-When you open Sui Explorer, the page displays network stats, transactions, and a partial list of validators on the network, sorted randomly. The **Transactions** table lists the most recent transaction first.
-
-The **Top Validators** table lists the top validators on the network and includes a map showing the geographic locations of all nodes on the network.
-
-Click **More Transactions** to open the **Transactions** page and view all of the transactions on the network.
-
-## Transactions
-
-The **Transactions** page lists all transactions on the network. You can display 20, 40, or 60 rows of transactions per page. Use the drop-down near the bottom-right corner of the page to change the number of rows displayed per page. Use the page selector icons at the bottom of the page to view more transactions.
-
-### Transaction table columns
-
-The **Transactions** table on the page includes the following columns:
- * **Time** - The time at which the transaction occurred.
- * **Type** - The type of transaction, one of Call, TransferSui, TransferObject, or Publish.
-     * **Call** - A transaction that calls a move module. For Call transactions, the table includes only the sender address.
-     * **TransferSui** - A transaction to transfer Sui from one address to another.
-     * **TransferObject** - A transaction to transfer an object to a different address.
-     * **Publish** - A transaction to publish a package.
-     * **Batched** - A batch of transactions.
- * **Transaction ID** - The unique identifier for the transaction. Click the clipboard icon to copy the ID. Click a value in the **Transaction ID** column to display the details about the transaction.
- * **Addresses** - The addresses of the sender and receivers for the transaction. You can click on an address for additional details and transactions made using the address.
- * **Amount** - The number of coins and coin type used for the transaction.
- * **Gas** - the amount of Sui used to pay for the gas required to complete the transaction.
-
-You can click on a value in the **Transaction ID** or **Addresses** column to open a details page for the transaction or address. When you click a transaction ID, the page that opens depends on the type of transaction. Sui Explorer provides the following detail pages:
- * [Transaction details](#transaction-details-pages) for each transaction type
-     * TransferSui
-     * TransferObject
-     * Call
-     * Publish
-     * Batch transactions
- * [Object details](#object-details-page)
- * [Address details](#address-details-page)
- * [Package details](#package-details-page)
-
-## Transaction details
-
-When you click a **Transaction ID**, a details page opens. The page title reflects the transaction type, and the fields displayed vary depending on the transaction type. If you don’t see one of the fields, it is because it is not available for the selected transaction type. For example, a TransferSui transaction does not include an **Events** tab.
-
-The transaction details pages include the following tabs:
- * **Details** - Provides additional details about the transaction.
- * **Events** - Displays the events associated with the transaction.
- * **Signatures** - Lists the signatures from validators for the transaction.
-
-The **Details** tab includes the following fields:
- * **Package Details** - Displayed only for Call transactions.
-     * **Package ID** - The ID of the package associated with the Call transaction.
-     * **Module** - The module used for the transaction.
-     * **Function** - The function called for the transaction.
-     * **Argument** - Any arguments included with the function.
- * **Updated** - The object ID for the object the transaction updated.
- * **Created** - The object ID for the object this transaction created.
- * **Amount** - The number and type of coins transferred for the transaction.
- * **Sender** - The address of the sender of the transaction. Displayed only for Publish transactions.
- * **Sender & Recipients** - The addresses associated with the transaction. The first value is the sender's address, and the address next to the green checkmark is the recipient's address. When there are multiple recipients, the field includes multiple addresses.
- * **Modules** - Shows the module code used to create and execute the transaction.
- * **Gas and storage fees** - Details about the gas and fees for the transaction.
-The value for **Gas Payment** is the object ID for the coin object used for the transaction.
- * **Gas Fees** - The number of gas units used for the transaction.
- * **Gas Budget** - The maximum number of gas units allowed for the transaction.
-
-The **Events** tab lists the events the transaction generated and the details about each event. TransferSui transactions do not include events.
-
-The **Signatures** tab includes the following fields:
- * **Transaction Signatures** - The signature or signatures for the transaction.
- * **Validator Signatures** - The signatures from the validators that validated the transaction.
-
-## Object details
-
-When you click on an object ID displayed on a transaction details page it opens a page that displays the details for the object, such as the transactions associated with the object.
-
-The page includes the following details:
-
- * **Description**
-     * **Type** - The type of the object, such as coin.
-     * **Object ID** - The ID of the object.
-     * **Last Transaction ID** - The ID of the most recent transaction associated with the object.
-     * **Version** - The version of the object.
-     * **Owner** - The address of the owner of the object.
- * **Properties** - Details such as the coin balance for the object.
- * **Child Objects** - The objects that this object owns.
-**Transactions** - The same information as the **Transactions** page, but limited to the transactions associated with the object.
-
-## Address details
-
-The **Address** details page lets you view details about a specific address, including assets owned by the address and transactions that interacted with the address.
-
-The **Address** details page includes the following fields:
- * **Owned objects** - The objects owned by the address, such as coins.
- * **Coins** - List of tokens owned and their aggregated balance by coin type. Click on an entry to view additional details about individual coin objects.
- * **NFTs** - List of NFTs owned by the address. Click an ID to view the object details page for the NFT.
- * **Transactions** - Click to view more detailed information about each transaction.
-
-## Package details
-
-The **Package** details page displays the object ID, version, and publisher of the package. It also shows the modules used, including the code for each.
-
-The **Package** details page includes the following fields:
- * **Details**
-     * **Object ID** - The object ID of the package.
-     * **Version** - The version of the package.
-     * **Publisher** - The publisher of the package.
- * **Modules** - Lists the modules used in the package.
