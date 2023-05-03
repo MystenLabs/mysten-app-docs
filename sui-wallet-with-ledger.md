@@ -112,4 +112,4 @@ You can use Sui Wallet to stake the SUI in your Ledger account just like using a
 
 ## Support for Sui Wallet
 
-To get help with Sui Wallet 
+To get help with Sui Wallet please visit the [Mysten Labs Discord](https://discord.gg/mysten).
