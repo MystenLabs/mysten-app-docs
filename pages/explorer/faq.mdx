@@ -1,0 +1,58 @@
+# Sui Explorer FAQ
+
+Are you looking for Sui Explorer technical docs? Visit [Sui Explorer by Mysten Labs](./).
+
+##### What is a Transaction Block?
+
+A transaction block is a set of up to 1,024 transactions grouped together for execution. These are programmable transactions that go into a programmable transaction block. To learn more, see [Sui Programmable Transaction Blocks](https://docs.sui.io/build/prog-trans-ts-sdk).
+
+##### What are Epochs?
+
+Operations of the Sui network are temporally partitioned into non-overlapping 24-hour periods called epochs. Within each epoch, the validator set and the stake distribution are fixed. The gas fees collected during the epoch together with the epoch’s stake subsidies (if any) are distributed at the end of the epoch to SUI stakers. In addition, the validator set and voting shares of each validator are adjusted at the epoch boundary to reflect the epoch’s staking and unstaking requests. To learn more, see [Epochs](https://docs.sui.io/learn/architecture/validators#epochs).
+
+##### What is a block explorer?
+
+The block explorer in Sui Explorer displays details about transaction blocks, including the objects used, transaction signatures, and gas and storage fees associated with the transaction block. Click on any transaction block link in Sui Explorer to view it in the block explorer.
+
+##### What are transaction digests?
+
+A transaction digest is a 32 byte value included in object metadata. The hash is used with signatures to verify transaction authenticity.
+
+##### What is MIST?
+
+A MIST is a fractional unit of SUI. Each MIST equals 0.000000001 SUI, or 1 SUI equals 1 Billion MIST. Sui Wallet and Sui Explorer display gas fees in MIST.
+
+##### What are owned objects?
+
+Owned objects on Sui are objects that are owned by an address or another object. Object ownership determines how an object can be used in transactions. Objects owned by an address require owner approval to use them. Shared objects can be used by anyone, and objects with no specific owner are immutable and can’t be updated by anyone. To learn more, see [Objects in Sui](https://docs.sui.io/devnet/learn/objects).
+
+##### Why aren’t my NFTs rendering in the Sui Explorer?
+
+Sui Explorer and Sui Wallet use the Sui Object Display standard to manage object display. If your NFT was not created following this standard it might not display correctly in Sui Explorer.
+
+##### How do I stake in the Sui Explorer?
+You can’t stake directly from Sui Explorer, but you can view validator details and then click **Stake SUI** on the validator page to open Sui Wallet and display the staking flow for the selected validator.
+
+##### Why is the gas fee negative?
+
+In some cases, failed transactions may update or delete gas objects before failing. In such cases, the storage rebates associated with deleting gas objects may more than offset the computation charges charged by the failed transaction and deliver a negative gas fee. In other words, the user may receive a positive SUI transfer even though their transaction failed.
+
+##### What are the storage fees?
+
+Storage fees in Sui are charges for storing objects on the Sui network. Storage fees contribute to the [Sui Storage Fund](https://docs.sui.io/learn/tokenomics/storage-fund). Storage fees for transactions cover storage for the associated object for the lifetime of the object on the network. If you delete an object, or combine objects (which also deletes the combined objects and creates a new one), you might get a rebate that returns part of the storage fee because the fee covered an object that is no longer stored on the network.
+
+##### How do I find a specific Transaction?
+
+If you have the transaction ID, you can search for that value in Sui Explorer to display the transaction. If you don’t know the ID, you can search Sui Explorer using your wallet address and then review the transactions for the address.
+
+##### Can I get alerts sent to me?
+
+Sui Explorer does not support alerts at this time.
+
+##### Can I download the data?
+
+Sui Explorer does not support downloading data at this time. You can get transaction data programmatically using the Sui API.
+
+##### There is no data showing up on Sui Explorer
+
+If there is no data displayed in Sui Explorer, it could be due to network connectivity, or that the selected Sui network (Devnet, Testnet or Mainnet) is not currently available. Confirm that your computer connects to the Internet, and try choosing a different Sui network to see if data displays for it. If not, check [the Sui network status page.](https://status.sui.io/)
