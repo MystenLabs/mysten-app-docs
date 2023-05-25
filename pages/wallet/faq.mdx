@@ -1,0 +1,115 @@
+# Frequently Asked Questions
+
+Are you looking for Sui Wallet technical docs? Visit [Sui Wallet by Mysten Labs](./).
+
+##### How can I get Sui Wallet?
+
+Sui Wallet is available on any Chromium-based browser. This includes Google Chrome, Microsoft Edge, Firefox, Opera, Brave and many others. [Install the Sui Wallet extension](https://chrome.google.com/webstore/detail/sui-wallet/opcgpfmipidbgpenhmajoajpbobppdil) from the Google Chrome web store.
+
+##### When will Sui Wallet be supported on other browsers?
+
+There are no plans for Sui Wallet to be available on other browsers at this time.
+
+##### Can I use Sui Wallet on my phone?
+
+Sui Wallet is available only as a browser extension and does not work on mobile versions of the browser.
+
+##### What is a recovery phrase?
+
+A recovery phrase is a unique 12-word text string that you receive when you create a wallet on Sui. You must save this phrase as it is the only way to recover a wallet in case of forgotten password. You will also need this phrase if you want to export your wallet account to another wallet.
+
+##### What does it mean to Import an existing wallet?
+
+You can import a wallet account from another wallet if you have the recovery phrase for that wallet. It is not possible to import a wallet without the recovery phrase.
+
+##### How do I get SUI into my wallet?
+
+To get SUI you can receive it from another address or purchase it. You can acquire SUI via an exchange that lists SUI, and then transfer the SUI to your wallet once purchased. Alternatively, you can purchase SUI directly within the Sui Wallet.
+
+##### Can I buy SUI with my credit card?
+
+You can purchase SUI within the Sui Wallet using a valid card. Simply click on the **Buy & Sell** button to start this process.
+
+##### Who are MoonPay and Transak?
+
+We use third party services to allow users to purchase SUI inside the Sui Wallet. Currently, MoonPay and Transak provide these services inside Sui Wallet. If you have an existing account with these providers, you can use it when prompted in the purchase flow. You can also create an account if you do not already have one.
+
+##### How do I convert my SUI back to my currency?
+
+It is not possible to sell SUI inside Sui Wallet at this time. You may transfer SUI from Sui Wallet to another wallet or an exchange to do this.
+
+##### My NFTs are in my wallet, but I can’t see the images, why?
+
+Sui Wallet recognizes images using a standard called [Object Display](https://docs.sui.io/build/sui-object-display). If an NFT doesn’t use this standard, Sui Wallet shows the asset but with no image.
+
+##### How do I send SUI to another person?
+
+To send SUI to another wallet, you just need the wallet address. Note you can send only to wallets that support the SUI token, and use 32 or 64 byte addresses. Simply use the **Send** button in your wallet, enter the amount and the recipient wallet address. Ensure to double check the wallet address, you can’t reverse completed transactions. SUI cannot be recovered if you entered an incorrect address.
+
+##### What information do I need to give someone in order to receive SUI?
+
+You simply need to share your wallet address. This is available above your SUI balance on the **Coins** tab in the wallet. The button copies your address so you can paste it elsewhere. You can also access your wallet address under **Account** in the burger menu on the top right of your wallet.
+
+##### My transactions failed, why do I still pay the gas fee?
+
+Transactions can fail for a number of reasons, such as being incorrectly specified or incorporating an insufficient gas budget (for more details on gas budgeting read [Gas in Sui](https://docs.sui.io/learn/tokenomics/gas-in-sui)). Failed transactions still incur gas fees in order to compensate validators for the time spent attempting to process the transaction.
+
+##### My transactions failed, why did I pay a negative gas fee?
+
+In some cases, failed transactions may update or delete gas objects before failing. In such cases, the storage rebates associated with deleting gas objects may more than offset the computation charges charged by the failed transaction and deliver a negative gas fee. In other words, the user may receive a positive SUI transfer even though their transaction failed.
+
+##### What is staking?
+
+Staking allows you to earn rewards by placing your SUI with validators on the network who verify transactions. Sui is a Proof-of-Stake network and validators play a key role in maintaining the accurate state and security of the network. Each validator decides on the rewards they offer for stakes. You may stake with one or many validators at any time. The minimum staking amount is 1 SUI. For more information on staking, visit the [Sui Tokenomics article](https://blog.sui.io/sui-delivers-infrastructure-friendly-tokenomics/).
+
+##### How do I decide how which validator to stake with?
+
+Choosing a validator is a personal decision. From the Sui Wallet, you can click on the validator address to view their page on the Sui Explorer. Sui Explorer shows information and statistics about the validator, including a link to their website where you can learn more. It also shows past performance, expected rewards, and the validators requested gas price for the next epoch.
+
+Do your own research. If a validator no longer meets the standard requirements for the network, they can be removed in a future epoch. Sui Explorer indicates any validator that is at risk of being removed. If a validator has as Tallying Rule score of 0, it means that other validators have requested that the validator be removed from the validator set.
+
+##### How do I track my stake?
+
+You can view your current stakes on the **Coins** tab of Sui Wallet, including the average APY earned from all of the validators you staked with.
+
+##### Can I set up alerts for my stake?
+
+Sui Wallet does not support alerts at this time. Sui epochs last 24 hours, and stake rewards are calculated and distributed after each epoch concludes. You can withdraw your stake at any time.
+
+##### What is Sui Explorer and why does Sui Wallet link to it?
+
+Sui Explorer is an app from Mysten Labs that allows anyone to view activity on the Sui Network. Sui Explorer shows all on-chain activity for Sui in real time. You can use the link in Sui Wallet to confirm that your transaction completed as expected on the network. [Visit Sui Explorer.](https://suiexplorer.com)
+
+##### What is the Playground?
+
+The Playground lists apps on the Sui network that may be of interest. Apps are actively curated, but do not indicate any endorsement or relationship with Sui Wallet or Mysten Labs. Please do your own research before you connect your wallet to any site.
+
+##### What does Active Connections mean?
+
+**Active Connections** shows any apps that are currently connected to your Sui Wallet. The apps include any that you previously connected your wallet to. Connections persist even if you haven’t carried out any transactions. Sui Wallet requires you to approve any transaction that uses your address even after you connect your wallet to a site. To remove a connection, click on it and then click **Disconnect**.
+
+##### Where can I see more detail about my transactions and activity?
+
+The **Activity** tab on Sui Wallet shows a high-level list of all of your transactions. Click on a transaction to view details about it. You can also view the transaction on Sui Explorer by following the link displayed on the details page. You might need to scroll down to see the link on large or complex transactions.
+
+##### My wallet keeps logging me out, how do I stop this?
+
+Sui Wallet automatically times out to protect your account. You can increase this time out from the burger menu on the top right. You can increase the Auto-lock to a maximum of 30 minutes.
+
+##### I’ve been testing a lot of apps and now I can’t see my assets or my SUI
+
+Check that your Sui Wallet is connected to the correct network. The currently active network displays in the Sui icon in the top-left corner of Sui Wallet. Test activity and transactions happen on Testnet or Devnet, with real transactions happening on Mainnet. Please note that SUI is not transferable between networks. To change the active network, click the burger menu in the top right, click **Network**, and then click the network to use.
+
+On rare occasions, when Sui deploys a new version to a network, such as Devnet, it resets network data and starts with a clean network. If you collected NFTs or added SUI to your wallet using the previous release, they disappear from your wallet when the network resets.
+
+##### I think someone has access to my Sui Wallet, what do I do?
+
+If you think someone has access to your wallet you should immediately transfer any assets in your wallet to another account address. You should also consider:
+
+- Check your device for viruses and malware
+- Confirm that your passphrase is securely stored and that no one has accessed it
+- Check Sui Explorer for any unrecognized activity associated with your wallet address
+
+##### Can I update my [seed phrase/mnemonic] to something more memorable?
+
+No, Sui Wallet does not support changing the passphrase generated for your wallet.
