@@ -22,7 +22,7 @@ The **Reference Gas Price** block shows the current gas fee for transactions, an
 
 The **On the Network** box shows total number of packages, transaction blocks, and objects on the network. This is a cumulative running total since network genesis.
 
-The **Sui Nodes** map shows the geographic location of nodes on the three Sui networks, Mainnet, Testnet, and Devnet. Larger blue dots indicate a larger larger number of nodes in the region. Hover your cursor over a country to see the number of nodes in that country.
+The **Sui Nodes** map shows the geographic location of nodes on the three Sui networks, Mainnet, Testnet, and Devnet. Larger blue dots indicate a larger number of nodes in the region. Hover your cursor over a country to see the number of nodes in that country.
 
 The **Transactions** table includes the following tabs:
 * **Transaction Blocks** - shows the transactions on the network, with the most recent transaction first. Click on a value in the **Digest** or **Sender** columns to view details about them. Click **More Transaction Blocks** below the table to view all transactions on the network. You can choose the number of results per page using the drop-down in the bottom-right corner.
@@ -39,7 +39,7 @@ When you open Sui Explorer, it displays the transactions for the Mainnet network
 
 ## Initiate staking from Sui Explorer
 
-You can initiate a stake request for a validator directly from the detail page for in Sui Explorer. Each validator detail page displays data to help you choose a validator that matches your objectives for staking. If you identify a validator you want to stake with, just click **Stake SUI** near the validator name in the top-left of the page. When you click the link, you wallet opens to the staking flow for the selected validator. To learn more about staking with Sui Wallet, see [Stake and Earn SUI](mysten-sui-wallet.md#stake-and-earn-sui).
+You can initiate a stake request for a validator directly from the detail page in Sui Explorer. Each validator detail page displays data to help you choose a validator that matches your objectives for staking. If you identify a validator you want to stake with, just click **Stake SUI** near the validator name in the top-left of the page. When you click the link, your wallet opens to the staking flow for the selected validator. To learn more about staking with Sui Wallet, see [Stake and Earn SUI](mysten-sui-wallet.md#stake-and-earn-sui).
 
 ## Find your transaction
 
