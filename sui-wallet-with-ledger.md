@@ -92,7 +92,7 @@ Sui Wallet displays the result of the transaction.
 
 You can use Sui Wallet to stake the SUI in your Ledger account just like using any other account in Sui Wallet. However, when you use an account from your Ledger device to stake SUI, the device doesn't recognize the transaction type. As a result, you can't directly approve (sign) the transaction. Instead, you can enable blind signing on your Ledger device, and then approve the blind signing of the transaction just like approving a direct transaction.
 
-1. Unlock you Ledger device and start the Sui app.
+1. Unlock your Ledger device and start the Sui app.
 1. Enable Blind signing by pressing the Right button until **Blind signing** displays.
 1. Press both buttons to select the setting, then press both buttons again to enable blind signing.
 1. Press the Right button again to display **Back**, then press both buttons.
@@ -107,7 +107,7 @@ You can use Sui Wallet to stake the SUI in your Ledger account just like using a
    * **Blind sign transaction**
    * **Confirm**
 1. Press both buttons while it displays **Confirm** to confirm the stake transaction.
-   **Note:** Press the Right button one more time display **Reject**, then press both buttons to reject the transaction.
+   **Note:** Press the Right button one more time to display **Reject**, then press both buttons to reject the transaction.
 1. The device displays **Working** and then completes the transaction. Sui Wallet displays the result of the transaction.
 
 ## Support for Sui Wallet
