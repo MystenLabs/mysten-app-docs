@@ -1,5 +1,11 @@
 {
-  "index": "Home",
-  "explorer": "Explorer",
-  "wallet": "Wallet"
+  "index": "Wallet",
+  "quickstart": "Quickstart",
+  "tutorials": "Tutorials",
+  "multi-account": "Multi-Account",
+  "stake": "Stake with Sui Wallet",
+  "playground": "Wallet Playground",
+  "develop": "Develop with Sui Wallet",
+  "integrations": "Integrations",
+  "faq": "FAQ"
 }
