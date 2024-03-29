@@ -2,7 +2,7 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  primaryHue: 338,
+  primaryHue: 211,
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
